@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.index.css">
+    <script src="index.js" defer></script>
+</head>
+<body onload="initializeApp()">
+    <h1>Employee List</h1>
+
+    <form id="searchForm" class="search-form">
+        <input type="text" id="searchKeyword" placeholder="Search by">
+        <select id="searchProperty">
+            <option value="id">ID</option>
+            <option value="name">Name</option>
+            <option value="department">Department</option>
+        </select>
+        <button type="submit">Search</button>
+    </form>
+    <table id="employeeTable" border="5" cellpadding="20" border-color="black">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Projects</th>
+            </tr>
+        </thead>
+        <tbody id="employeeTableBody"></tbody>
+    </table>
+</body>
+</html>
